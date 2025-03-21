@@ -12,7 +12,7 @@ from crocodile.feature import Feature
 from crocodile.fetchers import BowFetcher, CandidateFetcher
 from crocodile.ml import MLWorker
 from crocodile.processors import RowBatchProcessor
-from crocodile.typing import ColType
+from crocodile.utils import ColType
 
 
 class Crocodile:

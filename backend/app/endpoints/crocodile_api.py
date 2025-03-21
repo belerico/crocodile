@@ -264,9 +264,9 @@ def get_datasets(
     return {
         "data": datasets,
         "pagination": {
-            "next_cursor": str(next_cursor)
-            if next_cursor
-            else None  # removed limit from pagination output
+            "next_cursor": (
+                str(next_cursor) if next_cursor else None
+            )  # removed limit from pagination output
         },
     }
 
@@ -307,9 +307,9 @@ def get_tables(
         "dataset": dataset_name,
         "data": tables,
         "pagination": {
-            "next_cursor": str(next_cursor)
-            if next_cursor
-            else None  # removed limit from pagination output
+            "next_cursor": (
+                str(next_cursor) if next_cursor else None
+            )  # removed limit from pagination output
         },
     }
 
